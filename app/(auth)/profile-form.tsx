@@ -58,7 +58,8 @@ export function ProfileForm() {
         .select()
         
         if(data){
-        toast.success("Created succefully");
+          localStorage.setItem("user_email", values.email)
+        toast.success("Created succefully, Please donot close page");
         router.push("/mainform")
         
         }

@@ -11,7 +11,6 @@ export default function Home() {
       <div className="px-2 pt-3 flex items-center justify-center  ">
         <Auth/>
       </div>
-
     </div>
     </div>
   );
