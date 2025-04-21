@@ -19,7 +19,7 @@ const Auth = () => {
 
         <div className="flex items-center space-x-2 pt-7 pr-[6rem] w-full justify-center">
           <h1 className="font-bold text-4x1 flex"> Hi there</h1>{" "}
-          <MdOutlineWavingHand className=" size-6 flex   transition-transfrom duration-500 ease-in-out hover:rotate-3" />{" "}
+          <MdOutlineWavingHand className=" size-6 flex   transition-transfrom duration-500 ease-in-out hover:rotate-3 text-amber-400" />{" "}
         </div>
         <p className="text-gray-300 text-sm ">Get started with appointments.</p>
         <div className="flex pt-4  w-full items- justify-center">
