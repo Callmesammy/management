@@ -3,6 +3,7 @@ import { createClient } from "@/utils/supabase/client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { MdOutlineWavingHand } from "react-icons/md";
+import { OtherForm } from "./_components/other-forms";
 
 interface Details{
 email: string,
@@ -52,7 +53,9 @@ const Welcome = () => {
         ))}
              
         <p className="text-sm text-gray-500">Let us know more about you</p>
-
+            <div className="pt-6 flex w-full h-full  px-3 items-center justify-center">
+                <OtherForm/>
+            </div>
          </div>
      );
 }
