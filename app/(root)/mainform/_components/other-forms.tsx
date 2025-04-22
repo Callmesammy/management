@@ -20,6 +20,8 @@ import { useState } from "react"
 import { useRouter } from "next/navigation"
 import { Loader2 } from "lucide-react"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import Image from "next/image"
 
 
 
@@ -228,6 +230,57 @@ export function OtherForm() {
             /></div>
           <h1 className="font-bold text-2xl"> Medical Information</h1>
 
+            <FormField
+          control={form.control}
+          name="email"
+          render={({ field }) => (
+            <FormItem >
+              <FormLabel>Email</FormLabel>
+              <Select onValueChange={field.onChange} defaultValue={field.value}>
+                <FormControl className="w-full bg-gray-700">
+                  <SelectTrigger>
+                    <SelectValue placeholder="Salect your manager" />
+                  </SelectTrigger>
+                </FormControl>
+                <SelectContent className="bg-amber-950 ">
+                  <SelectItem value="m@example.com">
+                  <div className="rounded-full w-8 h-8 flex relative">
+                    <Image src="/Ali.jpg" alt="picture" fill className="rounded-full object-cover"/>
+                  </div> <h1 className="text-md font-semibold text-pretty">Dr. Ali Shank</h1>
+                  </SelectItem>
+                  <SelectItem value="m@exadddmple.com">
+                  <div className="rounded-full w-8 h-8 flex relative">
+                    <Image src="/Anthony.jpg" alt="picture" fill className="rounded-full object-cover"/>
+                  </div> <h1 className="text-md font-semibold text-pretty">Dr. Anthony Isaiah</h1>
+                  </SelectItem>
+                  <SelectItem value="m@exddample.com">
+                  <div className="rounded-full w-8 h-8 flex relative">
+                    <Image src="/Franklin.webp" alt="picture" fill className="rounded-full object-cover"/>
+                  </div> <h1 className="text-md font-semibold text-pretty">Mr. Franklin Sheriff</h1>
+                  </SelectItem>
+                  <SelectItem value="m@exadfdmple.com">
+                  <div className="rounded-full w-8 h-8 flex relative">
+                    <Image src="/Peace.png" alt="picture" fill className="rounded-full object-cover"/>
+                  </div> <h1 className="text-md font-semibold text-pretty">Dr. Peace Samson</h1>
+                  </SelectItem>
+                  <SelectItem value="m@exerample.com">
+                  <div className="rounded-full w-8 h-8 flex relative">
+                    <Image src="/Ruth.webp" alt="picture" fill className="rounded-full object-cover"/>
+                  </div> <h1 className="text-md font-semibold text-pretty">Mrs. Ruth Kennedy</h1>
+                  </SelectItem>
+                  <SelectItem value="m@examdfgple.com">
+                  <div className="rounded-full w-8 h-8 flex relative">
+                    <Image src="/Sindy.jpg" alt="picture" fill className="rounded-full object-cover"/>
+                  </div> <h1 className="text-md font-semibold text-pretty">Miss. Sindy Jeremiah</h1>
+                  </SelectItem>
+                 
+                </SelectContent>
+                
+              </Select>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
           <div className="grid grid-cols-2 w-full gap-3">
             <FormField
               control={form.control}
