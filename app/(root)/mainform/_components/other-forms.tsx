@@ -78,7 +78,7 @@ export function OtherForm() {
         username: "",
         email: "", 
         phone_no: +234, 
-        type: "private",
+        type: 'male' | 'female' | 'private',
         image: "",
         doc_type: "",
         history: "",
@@ -103,7 +103,6 @@ export function OtherForm() {
         .select()
         
         if(data){
-          localStorage.setItem("user_email", values.email)
         toast.success("Created succefully, Please donot close page");
         router.push("/mainform")
         
