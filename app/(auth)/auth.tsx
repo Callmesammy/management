@@ -1,10 +1,12 @@
 import Image from "next/image";
 import { MdOutlineWavingHand } from "react-icons/md";
 import { ProfileForm } from "./profile-form";
+import Link from "next/link";
 
 const Auth = () => {
   return (
-    <div className="flex w-full h-screen justify-center space-y-3 flex-col">
+    <div className="flex w-full h-screen justify-center space-y-3 flex-col"> 
+    <Link href={"/mainform"} className="p-2 px-auto bg-sky-900 w-[8rem] rounded flex justify-center hover:bg-sky-950 items-center"> Continue</Link>
       <div className="  items-center justify-center flex w-full h-screen flex-col">
         <div className="flex space-x-2 items-center w-full justify-center ">
           <Image

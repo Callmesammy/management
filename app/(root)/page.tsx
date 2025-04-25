@@ -8,7 +8,7 @@ export default function Home() {
       <div className="w-full h-screen flex justify-center items-center border relative">
         <Image src="/manage.jpg" alt="background" fill className="object-cover"/>
         </div>
-      <div className="px-2 pt-3 flex items-center justify-center  ">
+      <div className="px-2 pt-3 flex items-center justify-center">
         <Auth/>
       </div>
     </div>
